@@ -56,28 +56,6 @@ import './style.css'
 				const mesh = new THREE.InstancedMesh( new THREE.PlaneGeometry( 1, 1 ), material, 20000 );
 				scene.add( mesh );
 
-				// debug
-
-				const gui = new GUI();
-
-				gui.add( size, 'value', 0, 1, 0.001 ).name( 'size' );
-
-				gui.addColor( { color: colorInside.value.getHex( THREE.SRGBColorSpace ) }, 'color' )
-					.name( 'colorInside' )
-					.onChange( function ( value ) {
-
-						colorInside.value.set( value );
-
-					} );
-
-				gui.addColor( { color: colorOutside.value.getHex( THREE.SRGBColorSpace ) }, 'color' )
-					.name( 'colorOutside' )
-					.onChange( function ( value ) {
-
-						colorOutside.value.set( value );
-
-					} );
-
 				// renderer
 
 				renderer = new THREE.WebGPURenderer( { antialias: true } );
@@ -114,6 +92,5 @@ import './style.css'
 
       // Modification de la taille du canvas
       renderer.setSize(800,400)
-      
 
 
