@@ -1,5 +1,9 @@
 import './style.css'
 
+import { librairie1 } from './librairie1.js';
+
+librairie1();
+
 
 			import * as THREE from 'three/webgpu';
 			import { color, cos, float, mix, range, sin, time, uniform, uv, vec3, vec4, PI2 } from 'three/tsl';
@@ -17,7 +21,7 @@ import './style.css'
 				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 100 );
 				camera.position.set( 4, 2, 5 );
 
-        // Nous avons supprimer une ligne pour rendre le fond transparent
+
 				scene = new THREE.Scene();
 
 				// galaxy
