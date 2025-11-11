@@ -116,6 +116,25 @@ ul {
   }
 }
 
+.tendance-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  text-align: center;
+}
+
+.tendance-parent img {
+  width: 40%;
+  height: 40%;
+}
+
+.tendance-enfant {
+  padding: 2em 5em 2em 5em;
+
+}
+
+/* ----------section footer---------- */
 .footer-wrapper {
   background-color: #E3A9A2;
   color: #000;
