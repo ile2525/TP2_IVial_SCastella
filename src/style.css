@@ -115,7 +115,7 @@ ul {
     transform: translate(0,0);
   }
 }
-
+/* ----------section tendances---------- */
 .tendance-parent {
   display: flex;
   justify-content: space-between;
@@ -132,6 +132,34 @@ ul {
 .tendance-enfant {
   padding: 2em 5em 2em 5em;
 
+}
+
+/* ----------section suite---------- */
+.suite {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+
+.suite img {
+  width: 50%;
+}
+
+.sans-photo {
+  width: 50%;
+  background-color: #FDE2A5;
+}
+
+.suite .texte {
+  position: absolute;
+  background-color: #7692C0;
+  color: white;
+  opacity: 80%;
+  border-radius: 1em;
+  max-width: 800px;
+  padding: 2rem;
+  font-size: 1.5em;
 }
 
 /* ----------section footer---------- */
