@@ -7,8 +7,8 @@ import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-
-function duplicate() {
+// Création des paramètres couleurInterne et couleurExterne pour rendre les instances modifiables
+function duplicate(couleurInterne = '#ffa575', couleurExterne = '#311599') {
 	let camera, scene, renderer, controls;
 
 	init();
@@ -16,7 +16,11 @@ function duplicate() {
 	function init() {
 
 		camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100);
-		camera.position.set(4, 2, 5);
+
+		// Permet la vision du dessus
+		camera.position.set(0, 50, 0);
+		camera.lookAt(0, 0, 0);
+
 
 
 		scene = new THREE.Scene();
@@ -48,8 +52,9 @@ function duplicate() {
 
 		material.positionNode = position.add(randomOffset);
 
-		const colorInside = uniform(color('#ffa575'));
-		const colorOutside = uniform(color('#311599'));
+		// Ajout des paramètre couleurInterne et couleurExterne
+		const colorInside = uniform(color(couleurInterne));
+		const colorOutside = uniform(color(couleurExterne));
 		const colorFinal = mix(colorInside, colorOutside, radiusRatio.oneMinus().pow(2).oneMinus());
 		const alpha = float(0.1).div(uv().sub(0.5).length()).sub(0.2);
 		material.colorNode = vec4(colorFinal, alpha);
@@ -66,7 +71,11 @@ function duplicate() {
 		document.body.appendChild(renderer.domElement);
 
 		controls = new OrbitControls(camera, renderer.domElement);
-		controls.enableDamping = true;
+
+		// Desactive les controles de la camera 
+		controls.enableDamping = false;
+		controls.enabled = false;
+
 		controls.minDistance = 0.1;
 		controls.maxDistance = 50;
 
@@ -92,10 +101,10 @@ function duplicate() {
 	}
 
 	// Modification de la taille du canvas
-	renderer.setSize(800, 400)
+	renderer.setSize(1000, 600)
 }
 
-duplicate('galaxy1');
-duplicate('galaxy2');
+duplicate('galaxy1', '#e47b42ff', '#991515ff');
+duplicate('galaxy2', '#2a8612ff', '#74580cff');
 
 
