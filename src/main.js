@@ -104,7 +104,7 @@ function duplicate(couleurInterne = '#ffa575', couleurExterne = '#311599') {
 	renderer.setSize(1000, 600)
 }
 
-duplicate('galaxy1', '#e47b42ff', '#991515ff');
-duplicate('galaxy2', '#2a8612ff', '#74580cff');
+// duplicate('galaxy1', '#e47b42ff', '#991515ff');
+// duplicate('galaxy2', '#2a8612ff', '#74580cff');
 
 
