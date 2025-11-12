@@ -22,7 +22,7 @@ body {
   height: 100vh;
 }
 
-.imgHero{
+.imgHero {
   width: 100%;
   height: 100%;
   top: 0;
@@ -58,7 +58,7 @@ body {
 }
 
 .osmea {
-  font-family: "fredoka",sans-serif;
+  font-family: "fredoka", sans-serif;
   font-size: 2.5rem;
   color: #382530;
   text-decoration: none;
@@ -106,7 +106,7 @@ body {
   color: #666DB0;
 }
 
-.titreContainer button{
+.titreContainer button {
   font-size: 1.5rem;
   font-family: "Poetsen One", sans-serif;
   padding: 1rem;
@@ -132,10 +132,11 @@ body {
   background-color: #E3A9A2;
   top: 0;
   left: 0;
-  z-index:10;
-  position:fixed;
+  z-index: 10;
+  position: fixed;
 
-  animation: shrinkToNavbar 3s ease forwards;  /*-----Nom durée fonction delai nbrItération direction modeRemplissage ÉtatExécution-----*/
+  animation: shrinkToNavbar 3s ease forwards;
+  /*-----Nom durée fonction delai nbrItération direction modeRemplissage ÉtatExécution-----*/
   animation-delay: 1.1s;
 }
 
@@ -146,7 +147,8 @@ body {
     left: 0;
     opacity: 1;
   }
-  90%{
+
+  90% {
     height: 9rem;
     top: 1rem;
     left: 5%;
@@ -187,53 +189,59 @@ body {
 }
 
 @keyframes logoFade {
-  0%{
+  0% {
     opacity: 0;
     top: 50%;
     left: 45%;
     width: 70%;
     transform: translate(-50%, -50%);
   }
-  25%{
+
+  25% {
     opacity: 1;
     top: 50%;
     left: 45%;
     width: 50%;
     transform: translate(-50%, -50%);
   }
-  29%{
+
+  29% {
     opacity: 1;
     top: 50%;
     left: 45%;
     width: 50%;
     transform: translate(-50%, -50%);
-    }
-  50%{
+  }
+
+  50% {
     opacity: 1;
-    top:2rem;
+    top: 2rem;
     left: 45%;
     width: 8%;
-  }  
-  80%{
-    opacity: 1;
-    top:1rem;
-    left: 5%;
-    width: 7%;
-    transform: translate(0,0);
+  }
 
-    }
-  95%{
+  80% {
     opacity: 1;
-    top:1rem;
+    top: 1rem;
     left: 5%;
     width: 7%;
-    transform: translate(0,0);
-    }
-  100%{
-    top:1rem;
+    transform: translate(0, 0);
+
+  }
+
+  95% {
+    opacity: 1;
+    top: 1rem;
     left: 5%;
     width: 7%;
-    transform: translate(0,0);
+    transform: translate(0, 0);
+  }
+
+  100% {
+    top: 1rem;
+    left: 5%;
+    width: 7%;
+    transform: translate(0, 0);
   }
 }
 
@@ -241,21 +249,24 @@ body {
 .tendances {
   margin: 3rem 14rem;
 }
-.tendances h2, h3, h4 {
+
+.tendances h2,
+h3,
+h4 {
   font-family: "Poetsen One", sans-serif;
   color: #382530;
   margin-bottom: 2rem;
 }
 
-.tendances h2{
+.tendances h2 {
   font-size: 2.3rem;
 }
 
-.tendances h3{
+.tendances h3 {
   font-size: 1.5rem;
 }
 
-.tendances h4{
+.tendances h4 {
   font-size: 1.3rem;
   text-decoration: underline;
   text-align: right;
@@ -326,40 +337,45 @@ body {
   max-width: 800px;
   padding: 2.5rem;
   font-size: 1.5em;
-  margin-left: 30rem;
 }
 
-.texte h2{
-  font-family: "Poetsen One", sans-serif;
-  margin-bottom: 2rem;
-}
 
-.texte p {
-  font-family: "lato", sans-serif;
-  font-weight: bold;
-}
-
-/* ----------------section avec carrousel---------------------------------------- */
     .swiper {
-      width: 100%;
-      height: 100%;
-    }
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  padding: 1.8em;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+  text-align: center;
+  font-size: 3em;
+  background: #2d4588;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  padding: 2.5em;
+  border-radius: 2em;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  color: #E3A9A2;
+   opacity: 100%;
+}
+
+.swiper-button-next {
+  color: #E3A9A2;
+}
+
+
 /* ----------section footer---------- */
 .footer-wrapper {
   background-color: #E3A9A2;
@@ -379,7 +395,7 @@ body {
   padding-bottom: 2em;
 }
 
-.footer-container ul{
+.footer-container ul {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
@@ -406,7 +422,7 @@ body {
 
   display: flex;
   flex-direction: row;
-  margin-top : 2em;
+  margin-top: 2em;
   gap: 0.5em;
 }
 
