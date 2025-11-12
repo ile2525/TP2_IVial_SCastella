@@ -8,7 +8,7 @@
 
 body {
   background-color: rgb(252, 249, 249);
-  color: rgb(0, 0, 0);
+  color: #382530;
 }
 
 /* ----------section header------------------------- */
@@ -274,7 +274,7 @@ h4 {
 .tendances p {
   font-family: "lato", sans-serif;
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;   /*----------------pourquoi son margin ne marche pas?--------*/
 }
 
 .tendance-parent {
@@ -306,6 +306,22 @@ h4 {
 
 .tendances button:hover {
   background-color: #b67e75;
+  transform: scale(0.95) translateY(2px);
+}
+
+.tendances a {
+  background-color: #E2ABA2;
+  color: inherit;
+  padding: 1rem 2rem;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.tendances a:hover {
+  background-color: #b67e75;
+  color: inherit;
   transform: scale(0.95) translateY(2px);
 }
 
@@ -349,6 +365,14 @@ h4 {
     font-weight: bold;
   }
 /* ------------------------------section carrousel------------------------------ */
+.varietes {
+  margin: 3rem 14rem;
+}
+
+.varietes h2 {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 2rem;
+}
 
     .swiper {
   width: 90%;
@@ -360,7 +384,7 @@ h4 {
 .swiper-slide {
   text-align: center;
   font-size: 3em;
-  background: #2d4588;
+  background: #FDE2A5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,17 +403,24 @@ h4 {
 .swiper-button-prev {
   color: #E3A9A2;
    opacity: 100%;
+    width: 3rem;
+   height: 3rem;
+   border-radius: 25%;
 }
 
 .swiper-button-next {
   color: #E3A9A2;
+   opacity: 100%;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 25%;
 }
 
 
 /* ----------section footer---------- */
 .footer-wrapper {
   background-color: #E3A9A2;
-  color: #000;
+  font-family: "lato", sans-serif;
 }
 
 .footer-container {
@@ -409,21 +440,41 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+  list-style: none;
 }
 
+.footer-container ul li:hover {
+  color: #7692C0;
+}
+
+.infolettre {
+  font-family: "Poetsen One",sans-serif;
+}
+
+.infolettre p {
+font-family: "lato", sans-serif;
+font-weight: bold;
+margin-top: 1rem;
+}
 .infolettre-form input {
   width: 45%;
   padding: 0.8em;
-  border-radius: 1.5em;
+  border-radius: 1em;
+  border: none;
 }
 
 .infolettre-form button {
   cursor: pointer;
   background-color: #ffffff;
+  border: none;
 
-  border-radius: 1.5em;
+  border-radius: 1em;
   padding: 0.8em;
   margin-top: 1em;
+}
+
+.infolettre-form button:hover{
+  background-color: #7692C0;
 }
 
 .footer-reseaux {
