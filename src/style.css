@@ -372,6 +372,7 @@ h4 {
 .varietes h2 {
   font-family: "Poetsen One", sans-serif;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
     .swiper {
@@ -389,8 +390,8 @@ h4 {
   justify-content: center;
   align-items: center;
 
-  padding: 2.5em;
-  border-radius: 2em;
+  padding: 10rem 2.5em;
+  border-radius: 1em;
 }
 
 .swiper-slide img {
@@ -493,4 +494,35 @@ margin-top: 1rem;
   justify-content: space-between;
 
   padding: 1em 4em;
+}
+
+
+
+
+
+/* ----------------------page 2 produits-------------------------------------------------------------- */
+.section1 {
+  margin: 4rem 20rem;
+}
+
+.imgTea {
+  width: 20rem;
+  height: 20rem;
+  background-color: #666DB0;
+}
+
+.info-container {
+}
+
+.icone-container {
+  width: 10rem;
+  height: 10rem;
+  background-color: #666DB0;
+}
+
+hr {
+  border: none;
+  height: 4px;         
+  background-color: #666DB0; 
+  width: 20%;       
 }
