@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(252, 249, 249);
   color: rgb(0, 0, 0);
 }
 
@@ -95,7 +95,7 @@ body {
   font-family: "Poetsen One", sans-serif;
   position: relative;
   text-align: left;
-  top: -20%;
+  top: -10%;       /* -----------------pourquoi ça change tout le temps? */
   left: 10%;
   width: 50%;
 }
@@ -229,11 +229,32 @@ body {
 
 /* ----------section tendances---------------------------------------------- */
 .tendances {
-  margin: 3rem 13rem;
+  margin: 3rem 14rem;
 }
-.tendances h2 {
+.tendances h2, h3, h4 {
   font-family: "Poetsen One", sans-serif;
+  color: #382530;
+  margin-bottom: 2rem;
+}
+
+.tendances h2{
   font-size: 2.3rem;
+}
+
+.tendances h3{
+  font-size: 1.5rem;
+}
+
+.tendances h4{
+  font-size: 1.3rem;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.tendances p {
+  font-family: "lato", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .tendance-parent {
@@ -245,12 +266,27 @@ body {
 }
 
 .tendance-parent img {
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
+  margin-bottom: 2rem;
 }
 
 .tendance-enfant {
   padding: 2em 5em 2em 5em;
+}
+
+.tendances button {
+  background-color: #E2ABA2;
+  padding: 1rem 2rem;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.tendances button:hover {
+  background-color: #b67e75;
+  transform: scale(0.95) translateY(2px);
 }
 
 /* ----------section suite---------- */
