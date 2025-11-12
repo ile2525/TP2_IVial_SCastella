@@ -119,6 +119,7 @@ body {
 
 .titreContainer button:hover {
   background-color: #415f8f;
+  transform: scale(0.95) translateY(2px);
 }
 
 
@@ -289,12 +290,13 @@ body {
   transform: scale(0.95) translateY(2px);
 }
 
-/* ----------section suite---------- */
+/* ----------section suite chez Osméa------------------------------------------------------------------ */
 .suite {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #FDE2A5;
 }
 
 .suite img {
@@ -313,11 +315,22 @@ body {
   opacity: 80%;
   border-radius: 1em;
   max-width: 800px;
-  padding: 2rem;
+  padding: 2.5rem;
   font-size: 1.5em;
+  margin-left: 30rem;
 }
 
+.texte h2{
+  font-family: "Poetsen One", sans-serif;
+  margin-bottom: 2rem;
+}
 
+.texte p {
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+}
+
+/* ----------------section avec carrousel---------------------------------------- */
     .swiper {
       width: 100%;
       height: 100%;
