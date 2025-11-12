@@ -139,7 +139,75 @@ ul {
   }
 }
 /*----------Footer---------------------------------------*/
+/* ----------section tendances---------- */
+.tendance-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  text-align: center;
+}
 
+.tendance-parent img {
+  width: 40%;
+  height: 40%;
+}
+
+.tendance-enfant {
+  padding: 2em 5em 2em 5em;
+
+}
+
+/* ----------section suite---------- */
+.suite {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+
+.suite img {
+  width: 50%;
+}
+
+.sans-photo {
+  width: 50%;
+  background-color: #FDE2A5;
+}
+
+.suite .texte {
+  position: absolute;
+  background-color: #7692C0;
+  color: white;
+  opacity: 80%;
+  border-radius: 1em;
+  max-width: 800px;
+  padding: 2rem;
+  font-size: 1.5em;
+}
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+/* ----------section footer---------- */
 .footer-wrapper {
   background-color: #E3A9A2;
   color: #000;
