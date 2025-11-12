@@ -120,6 +120,7 @@ body {
 
 .titreContainer button:hover {
   background-color: #415f8f;
+  transform: scale(0.95) translateY(2px);
 }
 
 
@@ -302,12 +303,13 @@ h4 {
   transform: scale(0.95) translateY(2px);
 }
 
-/* ----------section suite---------- */
+/* ----------section suite chez Osméa------------------------------------------------------------------ */
 .suite {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #FDE2A5;
 }
 
 .suite img {
@@ -326,18 +328,17 @@ h4 {
   opacity: 80%;
   border-radius: 1em;
   max-width: 800px;
-  padding: 2rem;
+  padding: 2.5rem;
   font-size: 1.5em;
 }
 
 
-.swiper {
+    .swiper {
   width: 90%;
   height: 100%;
   background-color: transparent;
   padding: 1.8em;
 }
-
 
 .swiper-slide {
   text-align: center;
