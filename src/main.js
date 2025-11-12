@@ -1,3 +1,14 @@
+import Swiper from 'swiper';
+import 'swiper/css';
+
+	
+	var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
 import './style.css'
 
 import * as THREE from 'three/webgpu';

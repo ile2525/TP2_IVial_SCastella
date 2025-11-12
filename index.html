@@ -18,6 +18,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap"
     rel="stylesheet">
+    
+      <!-- ----------Swiper---------- -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,6 +43,7 @@
   </header>
 
   <main>
+      <!-- ----------Section tendances---------- -->
     <section class="tendances">
       <h2>Les tendances de l'automne</h2>
       <div class="tendance-parent">
@@ -70,14 +74,40 @@
       <h2>Decouvrez plus de produits</h2>
     </section>
 
+
+    <!-- ----------Section suite---------- -->
     <section class="suite">
       <img src="img/feuilles-s2.png" alt="Feuilles">
       <div class="sans-photo"></div>
       <div class="texte">
         <h2>Chez Osméa, chaque tasse de thé naturel est une invitation à ralentir</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.></p>
       </div>
     </section>
+
+    <!-- ----------Section variété qui ne marche pas---------- -->
+    <section class="varietes">
+      <h2>Nos variétés</h2>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide carte-variete">Thé Vert</div>
+          <div class="swiper-slide carte-variete">Thé Blanc</div>
+          <div class="swiper-slide carte-variete">Thé Noir</div>
+          <div class="swiper-slide carte-variete">Thé Oolong</div>
+          <div class="swiper-slide carte-variete">Thé Rooibos</div>
+        </div>
+
+        <!-- Flèches de navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ----------Section footer---------- -->
@@ -138,7 +168,6 @@
     </div>
 
   </footer>
-
 
   <script type="module" src="/src/main.js"></script>
 </body>
