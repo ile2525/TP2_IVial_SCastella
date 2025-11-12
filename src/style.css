@@ -49,6 +49,12 @@ body {
   height: auto;
 }
 
+.osmea {
+  font-family: "lato",sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .navigation {
   list-style-type: none;
   display: flex;
@@ -56,6 +62,8 @@ body {
   font-family: "lato", sans-serif;
   font-size: 2rem;
 }
+
+/* ---------zone hero------------ */
 
 .titreContainer {
   font-family: "Poetsen One", sans-serif;
