@@ -135,8 +135,7 @@ body {
   z-index: 10;
   position: fixed;
 
-  animation: shrinkToNavbar 3s ease forwards;
-  /*-----Nom durée fonction delai nbrItération direction modeRemplissage ÉtatExécution-----*/
+  animation: shrinkToNavbar 3s ease forwards;    /*-----Nom durée fonction delai nbrItération direction modeRemplissage ÉtatExécution-----*/
   animation-delay: 1.1s;
 }
 
@@ -337,8 +336,19 @@ h4 {
   max-width: 800px;
   padding: 2.5rem;
   font-size: 1.5em;
+  margin-left: 30rem;
 }
 
+  .texte h2 {
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .texte p {
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+  }
+/* ------------------------------section carrousel------------------------------ */
 
     .swiper {
   width: 90%;
