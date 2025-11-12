@@ -501,28 +501,109 @@ margin-top: 1rem;
 
 
 /* ----------------------page 2 produits-------------------------------------------------------------- */
+
+.headerpage2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .section1 {
-  margin: 4rem 20rem;
+  margin: 5rem 20rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* ----------partie gauche---------- */
+.gauche {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  max-width: 20rem;
+  gap: 1em;
 }
 
 .imgTea {
   width: 20rem;
   height: 20rem;
   background-color: #666DB0;
+  border-radius: 1em;
+}
+
+.imgTeaSmall {
+  width: 5rem;
+  height: 5rem;
+  background-color: #666DB0;
+  border-radius: 1em;
+}
+
+/* ----------partie droite---------- */
+
+.droite {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 1em;
 }
 
 .info-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icone-prepation {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.icone-prepation img {
+  width: 50%;
 }
 
 .icone-container {
-  width: 10rem;
-  height: 10rem;
-  background-color: #666DB0;
+  width: 50%;
+  height: 100%;
+  background-color: #d6d7db;
 }
 
+/* ----------Séparateur---------- */
 hr {
   border: none;
   height: 4px;         
-  background-color: #666DB0; 
-  width: 20%;       
+  background-color: #6cb066; 
+  width: 100%;       
 }
+
+/* ----------prix---------- */
+.prix-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prix-container h3 {
+   text-decoration: line-through;
+}
+
+.prix-container h4 {
+   color: #F40000;
+}
+
+.prix-container button {
+  background-color: #E2ABA2;
+  border-radius: 1em;
+  width: 20%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.prix {
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+}
+
