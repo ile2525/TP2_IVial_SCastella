@@ -10,7 +10,26 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* ----------section header---------- */
+/* ----------section header------------------------- */
+
+.headerContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.imgHero{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+}
 
 .navbar {
   height: 9rem;
@@ -20,6 +39,9 @@ body {
   margin: 1rem auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
 }
 
 .logo-nav {
@@ -27,10 +49,42 @@ body {
   height: auto;
 }
 
-ul {
+.navigation {
   list-style-type: none;
   display: flex;
   gap: 2rem;
+  font-family: "lato", sans-serif;
+  font-size: 2rem;
+}
+
+.titreContainer {
+  font-family: "Poetsen One", sans-serif;
+  position: relative;
+  text-align: left;
+  top: -20%;
+  left: 10%;
+  width: 50%;
+}
+
+.titreHero {
+  font-size: 3.5rem;
+  color: #666DB0;
+}
+
+.titreContainer button{
+  font-size: 1.5rem;
+  font-family: "Poetsen One", sans-serif;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #E3A9A2;
+  border: none;
+  margin-top: 1rem;
+  background-color: #666DB0;
+  transition: 0.2s ease;
+}
+
+.titreContainer button:hover {
+  background-color: #415f8f;
 }
 
 
