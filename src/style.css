@@ -44,23 +44,49 @@ body {
   z-index: 5;
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .logo-nav {
-  width: 8%;
+  width: 17%;
   height: auto;
 }
 
 .osmea {
-  font-family: "lato",sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
+  font-family: "fredoka",sans-serif;
+  font-size: 2.5rem;
+  color: #382530;
+  text-decoration: none;
 }
 
 .navigation {
   list-style-type: none;
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.navigation li a {
   font-family: "lato", sans-serif;
   font-size: 2rem;
+  color: #382530;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  color: #254166;
+  transform: scale(1.1);
+}
+
+.recherche input {
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
 }
 
 /* ---------zone hero------------ */
@@ -96,7 +122,7 @@ body {
 }
 
 
-/* ----------animation header----------est-ce que ca devrait être dans un autre css?----- */
+/* ----------animation header---------------- */
 
 .rectangleAnime {
   width: 100%;
@@ -200,8 +226,16 @@ body {
     transform: translate(0,0);
   }
 }
-/*----------Footer---------------------------------------*/
-/* ----------section tendances---------- */
+
+/* ----------section tendances---------------------------------------------- */
+.tendances {
+  margin: 3rem 13rem;
+}
+.tendances h2 {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 2.3rem;
+}
+
 .tendance-parent {
   display: flex;
   justify-content: space-between;
@@ -217,7 +251,6 @@ body {
 
 .tendance-enfant {
   padding: 2em 5em 2em 5em;
-
 }
 
 /* ----------section suite---------- */

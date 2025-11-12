@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TP2-Osmea</title>
-  <!------------import police------------Lato et --->
+  <!------------import police------------Lato fredoka et poetone --->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,8 +18,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap"
     rel="stylesheet">
-    
-      <!-- ----------Swiper---------- -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- ----------Swiper---------- -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -28,34 +32,41 @@
   <header>
     <div class="headerContainer">
 
-         <img class="imgHero"  src="/heroTea.jpg" alt="image hero tasse">
-<!-- ----------Animation---------- -->
-    <div class="rectangleAnime"></div>
-    <img class="logoAnime" src="/logo-osmeaGrand.png" alt="logo Osmea">
-<!-- -------------Barre de navigation---------- -->
-    <nav class="navbar">
-      <img class="logo-nav" src="/logo-osmeaGrand.png" alt="image logo Osmea">
-      <a class="osmea" href="#">Osméa</a>
+      <img class="imgHero" src="/heroTea.jpg" alt="image hero tasse">
+      <!-- ----------Animation---------- -->
+      <div class="rectangleAnime"></div>
+      <img class="logoAnime" src="/logo-osmeaGrand.png" alt="logo Osmea">
+      <!-- -------------Barre de navigation---------- -->
+      <nav class="navbar">
+        <div class="logoContainer">
+        <img class="logo-nav" src="/logo-osmeaGrand.png" alt="image logo Osmea">
+        <a class="osmea" href="#">Osméa</a>
+        </div>
 
-      <ul class="navigation">
-        <li><a href="#">Nos produits</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Panier</a></li>
-        <li><a href="#">Connexion</a></li>
-      </ul>
+        <ul class="navigation">
+          <li class="recherche">
+            <form action="/recherche" method="get">
+              <input type="text" name="q" placeholder="Rechercher">
+            </form>
+          </li>
+          <li><a href="#">Nos produits</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Panier</a></li>
+          <li><a href="#">Connexion</a></li>
+        </ul>
 
-    </nav>
-<!-- -------------titre et bouton--------------- -->
- <div class="titreContainer">
-    <div class="titreHero">Chaque feuille cache une histoire… venez la découvrir.</div>
-    <button>Nos produits</button>
-    </div>
+      </nav>
+      <!-- -------------titre et bouton--------------- -->
+      <div class="titreContainer">
+        <div class="titreHero">Chaque feuille cache une histoire… venez la découvrir.</div>
+        <button>Nos produits</button>
+      </div>
 
     </div>
   </header>
 
   <main>
-      <!-- ----------Section tendances---------- -->
+    <!-- ----------Section tendances----------------------------------------------------------- -->
     <section class="tendances">
       <h2>Les tendances de l'automne</h2>
       <div class="tendance-parent">
