@@ -407,18 +407,11 @@ h4 {
   border: 0.5rem solid  #666DB0;
 }
 
-.swiper-button-prev {
-  color: #E3A9A2;
-   opacity: 100%;
-    width: 3rem;
-   height: 3rem;
-   border-radius: 25%;
-}
-
+.swiper-button-prev,
 .swiper-button-next {
   color: #E3A9A2;
-   opacity: 100%;
-   width: 3rem;
+   opacity: 1;
+    width: 3rem;
    height: 3rem;
    border-radius: 25%;
 }
@@ -521,7 +514,7 @@ margin-top: 1rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 3em;
 }
 
 /* ----------partie gauche---------- */
@@ -564,6 +557,7 @@ margin-top: 1rem;
 
 .info-container h2 {
   font-family: "poetsen One", sans-serif;
+  font-size: 2rem;
 }
 
 .info-container p {
@@ -589,9 +583,10 @@ margin-top: 1rem;
 /* ----------Séparateur---------- */
 hr {
   border: none;
-  height: 4px;         
+  height: 0.5rem;         
   background-color: #666DB0; 
-  width: 100%;       
+  width: 100%;
+  border-radius: 1rem;       
 }
 
 /* ----------prix---------- */
@@ -602,11 +597,13 @@ hr {
 
 .prix-container h3 {
    text-decoration: line-through;
+   text-align: right;
+   font-size: 1.5rem;
 }
 
 .prix-container h4 {
    color: #F40000;
-   font-size: 1.5rem;
+   font-size: 1.7rem;
    text-align: right;
 }
 
@@ -622,6 +619,8 @@ hr {
   color: #382530;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  margin-left: auto;
+  align-self: flex-end;
 }
 
 .prix-container button:hover {
