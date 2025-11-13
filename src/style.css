@@ -10,12 +10,12 @@ body {
   color: #4b3441;
 }
 
-/* ----------section header------------------------- */
+/* ----------section header------------------Sandra------- */
 
 .headerContainer {
   position: relative;
   display: flex;
-  justify-content: space-between;  /*--en flex start peut-petre?--*/
+  justify-content: space-between;
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -102,7 +102,7 @@ body {
   font-size: 1rem;
 }
 
-/* ---------zone hero------------ */
+/* ---------zone hero-----------Sandra------ */
 
 .titreContainer {
   font-family: "Poetsen One", sans-serif;
@@ -136,7 +136,7 @@ body {
 }
 
 
-/* ----------animation header---------------- */
+/* ----------animation header-----------Sandra--------- */
 
 .rectangleAnime {
   width: 100%;
@@ -259,7 +259,7 @@ body {
   }
 }
 
-/* ----------section tendances---------------------------------------------- */
+/* ----------section tendances-------------------Structure de base et position Iléona-----Stylisation Sandra--------------------- */
 .tendances {
   margin: 3rem 14rem;
 }
@@ -342,7 +342,7 @@ h4 {
   transform: scale(0.95) translateY(2px);
 }
 
-/* ----------section suite chez Osméa------------------------------------------------------------------ */
+/* ----------section suite chez Osméa----------------------Structure de base et position Iléona---------Stylisation Sandra----------------------------------- */
 .suite {
   display: flex;
   justify-content: center;
@@ -382,7 +382,7 @@ h4 {
   font-weight: bold;
 }
 
-/* ------------------------------section carrousel nos variétés------------------------------ */
+/* ------------------------------section carrousel nos variétés-----------fait par Iléona-------Sandra petites retouches et intégrations des images------------ */
 .varietes {
   margin: 3rem 14rem;
 }
@@ -442,7 +442,7 @@ h4 {
 
 
 
-/* ----------section footer---------- */
+/* ----------section footer--------------------Par Iléona---- */
 .footer-wrapper {
   background-color: #E3A9A2;
   font-family: "lato", sans-serif;
@@ -526,7 +526,7 @@ h4 {
 
 
 
-/* ----------------------page 2 produits------------------------------------------------------------------------------ */
+/* ----------------------page 2 produits-----------------Iléona: structure de base et position--------------Sandra stylisation et intégration des images--------------- */
 
 .headerpage2 {
   position: relative;
@@ -659,12 +659,12 @@ hr {
   width: 50%;
 }
 
-/*---------------------media-queries---responsive-------------------------------------------------------*/
+/*---------------------media-queries---responsive---------------Majoritairement Iléona----------------------------------------*/
 
 @media screen and (width <= 768px) {
 
 
-  /*-----------Animation--------*/
+  /*-----------Animation----Sandra----*/
   .rectangleAnime {
     width: 100%;
     height: 100vh;
@@ -722,7 +722,7 @@ hr {
     }
   }
 
-  /* ----------header---------- */
+  /* ----------header-----Sandra----- */
 
    .menu-burger {
     display: block; 
