@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: 1px solid red;    /* à supprimer eventuellement------------------*/
+  outline: 1px solid rgb(255, 176, 176);    /* à supprimer eventuellement------------------*/
 }
 
 body {
@@ -269,6 +269,7 @@ h4 {
   font-size: 1.3rem;
   text-decoration: underline;
   text-align: right;
+  cursor: pointer;
 }
 
 .tendances p {
@@ -500,7 +501,7 @@ margin-top: 1rem;
 
 
 
-/* ----------------------page 2 produits-------------------------------------------------------------- */
+/* ----------------------page 2 produits------------------------------------------------------------------------------ */
 
 .headerpage2 {
   position: relative;
@@ -527,11 +528,11 @@ margin-top: 1rem;
   gap: 1em;
 }
 
-.imgTea {
+.imgTea img{
   width: 20rem;
   height: 20rem;
-  background-color: #666DB0;
   border-radius: 1em;
+  border: 0.5rem solid  #666DB0;
 }
 
 .imgTeaSmall {
@@ -555,6 +556,15 @@ margin-top: 1rem;
   flex-wrap: wrap;
 }
 
+.info-container h2 {
+  font-family: "poetsen One", sans-serif;
+}
+
+.info-container p {
+  font-family: "lato", sans-serif;
+  margin-top: 2.5rem;
+}
+
 .icone-prepation {
   display: flex;
   justify-content: space-between;
@@ -568,14 +578,13 @@ margin-top: 1rem;
 .icone-container {
   width: 50%;
   height: 100%;
-  background-color: #d6d7db;
 }
 
 /* ----------Séparateur---------- */
 hr {
   border: none;
   height: 4px;         
-  background-color: #6cb066; 
+  background-color: #666DB0; 
   width: 100%;       
 }
 
@@ -591,6 +600,7 @@ hr {
 
 .prix-container h4 {
    color: #F40000;
+   font-size: 1.5rem;
 }
 
 .prix-container button {
@@ -599,6 +609,16 @@ hr {
   width: 20%;
   height: 50%;
   cursor: pointer;
+  border: none;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.2rem;
+  color: #382530;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.prix-container button:hover {
+  background-color: #b67e75;
 }
 
 .prix {
