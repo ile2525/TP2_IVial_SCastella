@@ -1,6 +1,6 @@
 import './style.css'
 
-// Ajout des document.querySelector pour rendre le carrousel applicable plusieurs fois
+// Ajout des document.querySelector pour rendre le carrousel applicable plusieurs fois----------Iléona
 document.querySelectorAll('.mySwiper').forEach((element) => {
 	new Swiper (element, {
 		slidesPerView: 3,
