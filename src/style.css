@@ -716,15 +716,15 @@ hr {
     padding: 1em;
   }
 
-/* ----------Carrousel---------- */
+  /* ----------Carrousel---------- */
   .varietes {
     margin: 2.5rem;
     text-align: center;
   }
 
-    .varietes img {
-      padding: 2rem;
-    }
+  .varietes img {
+    padding: 2rem;
+  }
 
   /* ----------Footer---------- */
   .footer-container {
@@ -743,19 +743,19 @@ hr {
     gap: 0.5rem;
   }
 
-    /* ----------Page 2---------- */
-    .section1 {
+  /* ----------Page 2---------- */
+  .section1 {
     flex-direction: column;
     align-items: center;
     margin: 2rem;
     gap: 1rem;
   }
 
-    .gauche {
+  .gauche {
     width: 100%,
   }
 
-   .droite {
+  .droite {
     width: 70%;
     text-align: center;
   }
@@ -766,18 +766,18 @@ hr {
     align-items: center;
   }
 
-    .prix-container {
+  .prix-container {
     flex-direction: column;
     align-items: center;
   }
 
-   .prix {
+  .prix {
     width: 100%;
     text-align: center;
     align-items: center;
   }
 
-    .prix-container button {
+  .prix-container button {
     width: 100%;
     font-size: 1.5rem;
   }
