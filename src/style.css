@@ -742,4 +742,43 @@ hr {
     align-items: center;
     gap: 0.5rem;
   }
+
+    /* ----------Page 2---------- */
+    .section1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+  }
+
+    .gauche {
+    width: 100%,
+  }
+
+   .droite {
+    width: 70%;
+    text-align: center;
+  }
+
+
+  .icone-prepation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .prix-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .prix {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+    .prix-container button {
+    width: 100%;
+    font-size: 1.5rem;
+  }
 }
