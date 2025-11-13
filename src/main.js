@@ -13,6 +13,18 @@ document.querySelectorAll('.mySwiper').forEach((element) => {
 });
 
 
+//----------affichage du menu burger--------------------------Sandra
+const menuIcon = document.querySelector(".menu-burger");
+const menuNavbar = document.querySelector(".navigation");
+
+function ouvreFermeMenu (){
+    menuNavbar.classList.toggle("ouverte");
+
+}
+
+menuIcon.addEventListener("click", ouvreFermeMenu);
+
+
 
 
 
