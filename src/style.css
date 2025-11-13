@@ -417,8 +417,8 @@ h4 {
 
 .swiper-slide img {
   display: block;
-  width: 150%;
-  height: 150%;
+  width: 100%;
+  height: auto;
   border-radius: 1rem;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -442,7 +442,7 @@ h4 {
 
 
 
-/* ----------section footer--------------------Par Iléona---- */
+/* ----------section footer--------------------Par Iléona-------------------------------- */
 .footer-wrapper {
   background-color: #E3A9A2;
   font-family: "lato", sans-serif;
@@ -820,6 +820,10 @@ hr {
 
   .varietes img {
     padding: 2rem;
+  }
+
+  .swiper-slide img {
+      border: 0.1rem solid #666DB0;
   }
 
   /* ----------Footer---------- */
