@@ -3,12 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: 1px solid rgb(255, 176, 176);    /* à supprimer eventuellement------------------*/
+  outline: 1px solid rgb(250, 221, 221);    /* à supprimer eventuellement------------------*/
 }
 
 body {
-  background-color: rgb(252, 249, 249);
-  color: #382530;
+  color: #4b3441;
 }
 
 /* ----------section header------------------------- */
@@ -84,7 +83,7 @@ body {
 }
 
 .recherche input {
-  padding: 0.6rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
   border: none;
   font-size: 1rem;
@@ -365,7 +364,7 @@ h4 {
     font-family: "lato", sans-serif;
     font-weight: bold;
   }
-/* ------------------------------section carrousel------------------------------ */
+/* ------------------------------section carrousel nos variétés------------------------------ */
 .varietes {
   margin: 3rem 14rem;
 }
@@ -376,30 +375,36 @@ h4 {
   margin-bottom: 2rem;
 }
 
-    .swiper {
+  .swiper {
   width: 90%;
   height: 100%;
   background-color: transparent;
-  padding: 1.8em;
+  padding: 3rem;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
+  font-family: "lato",sans-serif;
+  font-weight: bold;
   background: #FDE2A5;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  padding: 10rem 2.5em;
+  padding: 2.5em;
   border-radius: 1em;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
+  border-radius: 1rem;
   object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.5rem solid  #666DB0;
 }
 
 .swiper-button-prev {
@@ -436,6 +441,7 @@ h4 {
 
 .colonne h4 {
   padding-bottom: 2em;
+  color: #926761;
 }
 
 .footer-container ul {
@@ -601,6 +607,7 @@ hr {
 .prix-container h4 {
    color: #F40000;
    font-size: 1.5rem;
+   text-align: right;
 }
 
 .prix-container button {
