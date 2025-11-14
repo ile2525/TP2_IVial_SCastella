@@ -660,8 +660,11 @@ hr {
 .carte-variete img {
   width: 30vh;
   height: 45vh;
+}
 
-
+/*----------------Règle le probleme d'inversion de la flèche----------------------*/
+.fleche-prev {
+  transform: scaleX(-1);
 }
 
 /*---------------------media-queries---responsive---------------Majoritairement Iléona----------------------------------------*/
