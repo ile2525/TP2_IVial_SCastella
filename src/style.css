@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /*  outline: 1px solid rgb(250, 221, 221);     voir les outlines des box-----------------*/
 }
 
 body {
@@ -52,6 +51,7 @@ body {
   background: none;
   cursor: pointer;
 }
+
 .menu-burger img {
   width: 2.5rem;
   height: auto;
@@ -61,11 +61,11 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
+  width: 40%;
 }
 
 .logo-nav {
-  width: 17%;
+  width: 19%;
   height: auto;
 }
 
@@ -82,6 +82,7 @@ body {
   gap: 2.5rem;
   justify-content: space-between;
   padding-right: 2rem;
+  flex-wrap: wrap;
 }
 
 .navigation li a {
@@ -236,26 +237,27 @@ body {
 
   80% {
     opacity: 1;
-    top: 1rem;
+    top: 1.3rem;
     left: 5%;
     width: 7%;
     transform: translate(0, 0);
 
   }
 
-  95% {
+  99% {
     opacity: 1;
-    top: 1rem;
+    top: 1.3rem;
     left: 5%;
     width: 7%;
     transform: translate(0, 0);
   }
 
   100% {
-    top: 1rem;
+    top: 1.3rem;
     left: 5%;
     width: 7%;
     transform: translate(0, 0);
+    opacity: 0;
   }
 }
 
@@ -291,7 +293,6 @@ h4 {
   font-family: "lato", sans-serif;
   font-size: 1rem;
   margin-bottom: 1.5rem;
-  /*----------------pourquoi son margin ne marche pas?--------*/
 }
 
 .tendance-parent {
@@ -326,20 +327,11 @@ h4 {
   transform: scale(0.95) translateY(2px);
 }
 
-.tendances a {
-  background-color: #E2ABA2;
-  color: inherit;
-  padding: 1rem 2rem;
-  font-family: "Poetsen One", sans-serif;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 1rem;
-}
-
-.tendances a:hover {
-  background-color: #b67e75;
-  color: inherit;
-  transform: scale(0.95) translateY(2px);
+.tendance-enfant,
+button,
+a {
+  text-decoration: none;
+  color: #382530;
 }
 
 /* ----------section suite chez Osméa----------------------Structure de base et position Iléona---------Stylisation Sandra----------------------------------- */
@@ -384,18 +376,24 @@ h4 {
 
 /* ------------------------------section carrousel nos variétés-----------fait par Iléona-------Sandra petites retouches et intégrations des images------------ */
 .varietes {
-  margin: 3rem 14rem;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+
+
 }
 
 .varietes h2 {
   font-family: "Poetsen One", sans-serif;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-left: 8.5rem;
+
 }
 
 .swiper {
-  width: 90%;
-  height: 100%;
+  width: 90vw;
+  height: 70vh;
   background-color: transparent;
   padding: 3rem;
 }
@@ -411,16 +409,15 @@ h4 {
   align-items: center;
   flex-direction: column;
 
-  padding: 2.5em;
+  padding: 2em;
   border-radius: 1em;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: auto;
   border-radius: 1rem;
-  object-fit: cover;
+  object-fit: inherit;
   margin-bottom: 1rem;
   border: 0.5rem solid #666DB0;
 }
@@ -469,8 +466,14 @@ h4 {
   list-style: none;
 }
 
-.footer-container ul li:hover {
+.footer-container a:hover {
   color: #7692C0;
+  cursor: pointer;
+}
+
+.footer-container h4:hover {
+  color: #7692C0;
+  cursor: pointer;
 }
 
 .infolettre {
@@ -537,7 +540,7 @@ h4 {
 
 .section1 {
   margin: 5rem 20rem;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 3em;
@@ -548,14 +551,11 @@ h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  max-width: 20rem;
-  gap: 1em;
 }
 
 .imgTea img {
-  width: 20rem;
-  height: 20rem;
+  width: 20vw;
+  height: 50vh;
   border-radius: 1em;
   border: 0.5rem solid #666DB0;
 }
@@ -635,16 +635,15 @@ hr {
 
 .prix-container button {
   background-color: #E2ABA2;
-  border-radius: 1em;
-  width: 20%;
-  height: 50%;
+  border-radius: 1rem;
+  width: 30%;
+  height: 60%;
   cursor: pointer;
   border: none;
   font-family: "Poetsen One", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #382530;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.8rem 1rem;
   margin-left: auto;
   align-self: flex-end;
 }
@@ -659,9 +658,21 @@ hr {
   width: 50%;
 }
 
+/*----------------carrousel---------------------------*/
+
+.carte-variete img {
+  width: 30vh;
+  height: 45vh;
+}
+
+/*----------------Règle le probleme d'inversion de la flèche----------------------*/
+.fleche-prev {
+  transform: scaleX(-1);
+}
+
 /*---------------------media-queries---responsive---------------Majoritairement Iléona----------------------------------------*/
 
-@media screen and (width <= 768px) {
+@media screen and (width <=768px) {
 
 
   /*-----------Animation----Sandra----*/
@@ -681,13 +692,16 @@ hr {
     0% {
       opacity: 1;
     }
+
     80% {
       opacity: 1;
     }
+
     99% {
       opacity: 0;
     }
-    100%{
+
+    100% {
       opacity: 0;
       height: 0;
     }
@@ -711,21 +725,28 @@ hr {
     0% {
       opacity: 0;
     }
+
     30% {
       opacity: 1;
     }
+
     70% {
       opacity: 1;
     }
+    99% {
+      opacity: 0%;
+      height: 0;
+    }
     100% {
       opacity: 0;
+      height: 0;
     }
   }
 
   /* ----------header-----Sandra----- */
 
-   .menu-burger {
-    display: block; 
+  .menu-burger {
+    display: block;
     z-index: 101;
   }
 
@@ -742,8 +763,13 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5rem;
   }
+
+  .logo-nav {
+    width: 45%;
+  }
+
 
   .recherche input {
     width: 100%;
@@ -860,6 +886,10 @@ hr {
     text-align: center;
   }
 
+  .imgTea img {
+    width: 50vw;
+    height: 50vh;
+  }
 
   .icone-prepation {
     flex-direction: column;
