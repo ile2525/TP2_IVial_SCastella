@@ -51,6 +51,7 @@ body {
   background: none;
   cursor: pointer;
 }
+
 .menu-burger img {
   width: 2.5rem;
   height: auto;
@@ -81,7 +82,7 @@ body {
   gap: 2.5rem;
   justify-content: space-between;
   padding-right: 2rem;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .navigation li a {
@@ -326,9 +327,11 @@ h4 {
   transform: scale(0.95) translateY(2px);
 }
 
-.tendance-enfant, button, a {
+.tendance-enfant,
+button,
+a {
   text-decoration: none;
-    color: #382530;
+  color: #382530;
 }
 
 /* ----------section suite chez Osméa----------------------Structure de base et position Iléona---------Stylisation Sandra----------------------------------- */
@@ -373,7 +376,7 @@ h4 {
 
 /* ------------------------------section carrousel nos variétés-----------fait par Iléona-------Sandra petites retouches et intégrations des images------------ */
 .varietes {
-  justify-content:flex-start;
+  justify-content: flex-start;
   display: flex;
   flex-direction: column;
 
@@ -389,7 +392,7 @@ h4 {
 }
 
 .swiper {
-  width: 90vw;    
+  width: 90vw;
   height: 70vh;
   background-color: transparent;
   padding: 3rem;
@@ -414,7 +417,7 @@ h4 {
   display: block;
   width: 100%;
   border-radius: 1rem;
-  object-fit:inherit;
+  object-fit: inherit;
   margin-bottom: 1rem;
   border: 0.5rem solid #666DB0;
 }
@@ -669,7 +672,7 @@ hr {
 
 /*---------------------media-queries---responsive---------------Majoritairement Iléona----------------------------------------*/
 
-@media screen and (width <= 768px) {
+@media screen and (width <=768px) {
 
 
   /*-----------Animation----Sandra----*/
@@ -689,13 +692,16 @@ hr {
     0% {
       opacity: 1;
     }
+
     80% {
       opacity: 1;
     }
+
     99% {
       opacity: 0;
     }
-    100%{
+
+    100% {
       opacity: 0;
       height: 0;
     }
@@ -719,12 +725,15 @@ hr {
     0% {
       opacity: 0;
     }
+
     30% {
       opacity: 1;
     }
+
     70% {
       opacity: 1;
     }
+
     100% {
       opacity: 0;
     }
@@ -732,8 +741,8 @@ hr {
 
   /* ----------header-----Sandra----- */
 
-   .menu-burger {
-    display: block; 
+  .menu-burger {
+    display: block;
     z-index: 101;
   }
 
@@ -753,9 +762,9 @@ hr {
     padding: 0.5rem;
   }
 
-  .logo-nav {        
-  width: 45%;
-}
+  .logo-nav {
+    width: 45%;
+  }
 
 
   .recherche input {
@@ -869,6 +878,10 @@ hr {
     text-align: center;
   }
 
+  .imgTea img {
+    width: 50vw;
+    height: 50vh;
+  }
 
   .icone-prepation {
     flex-direction: column;
