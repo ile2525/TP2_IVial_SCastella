@@ -729,8 +729,13 @@ hr {
     70% {
       opacity: 1;
     }
+    99% {
+      opacity: 0%;
+      height: 0;
+    }
     100% {
       opacity: 0;
+      height: 0;
     }
   }
 
