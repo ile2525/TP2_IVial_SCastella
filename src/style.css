@@ -61,11 +61,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 40%;
 
 }
 
 .logo-nav {
-  width: 17%;
+  width: 19%;
   height: auto;
 }
 
@@ -82,6 +83,7 @@ body {
   gap: 2.5rem;
   justify-content: space-between;
   padding-right: 2rem;
+  flex-wrap:wrap;
 }
 
 .navigation li a {
@@ -236,26 +238,27 @@ body {
 
   80% {
     opacity: 1;
-    top: 1rem;
+    top: 1.3rem;
     left: 5%;
     width: 7%;
     transform: translate(0, 0);
 
   }
 
-  95% {
+  99% {
     opacity: 1;
-    top: 1rem;
+    top: 1.3rem;
     left: 5%;
     width: 7%;
     transform: translate(0, 0);
   }
 
   100% {
-    top: 1rem;
+    top: 1.3rem;
     left: 5%;
     width: 7%;
     transform: translate(0, 0);
+    opacity: 0;
   }
 }
 
@@ -291,7 +294,6 @@ h4 {
   font-family: "lato", sans-serif;
   font-size: 1rem;
   margin-bottom: 1.5rem;
-  /*----------------pourquoi son margin ne marche pas?--------*/
 }
 
 .tendance-parent {
@@ -326,20 +328,9 @@ h4 {
   transform: scale(0.95) translateY(2px);
 }
 
-.tendances a {
-  background-color: #E2ABA2;
-  color: inherit;
-  padding: 1rem 2rem;
-  font-family: "Poetsen One", sans-serif;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 1rem;
-}
-
-.tendances a:hover {
-  background-color: #b67e75;
-  color: inherit;
-  transform: scale(0.95) translateY(2px);
+.tendance-enfant, button, a {
+  text-decoration: none;
+    color: #382530;
 }
 
 /* ----------section suite chez Osméa----------------------Structure de base et position Iléona---------Stylisation Sandra----------------------------------- */
