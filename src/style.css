@@ -464,8 +464,14 @@ h4 {
   list-style: none;
 }
 
-.footer-container ul li:hover {
+.footer-container a:hover {
   color: #7692C0;
+  cursor: pointer;
+}
+
+.footer-container h4:hover {
+  color: #7692C0;
+  cursor: pointer;
 }
 
 .infolettre {
