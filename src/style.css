@@ -61,7 +61,6 @@ body {
   align-items: center;
   gap: 0.5rem;
   width: 40%;
-
 }
 
 .logo-nav {
@@ -633,16 +632,15 @@ hr {
 
 .prix-container button {
   background-color: #E2ABA2;
-  border-radius: 1em;
-  width: 20%;
-  height: 50%;
+  border-radius: 1rem;
+  width: 30%;
+  height: 60%;
   cursor: pointer;
   border: none;
   font-family: "Poetsen One", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #382530;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.8rem 1rem;
   margin-left: auto;
   align-self: flex-end;
 }
@@ -752,8 +750,13 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5rem;
   }
+
+  .logo-nav {        
+  width: 45%;
+}
+
 
   .recherche input {
     width: 100%;
